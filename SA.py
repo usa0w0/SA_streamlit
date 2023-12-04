@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
     input_temp_init = st.slider('初期温度', min_value=50, max_value=500, value=300)
     input_temp_fin  = st.slider('終了温度', min_value=0.0, max_value=1.0, value=0.01)
-    input_cooling_rate = st.slider('冷却度', min_value=0.0, max_value=1.0, value=0.9)
+    input_cooling_rate = st.slider('冷却度', min_value=0.0, max_value=0.99, value=0.9)
     input_n_iteration = st.slider('繰り返し回数', min_value=1, max_value=500, value=200)
     change_global(input_temp_init, input_temp_fin, input_cooling_rate, input_n_iteration)
 
